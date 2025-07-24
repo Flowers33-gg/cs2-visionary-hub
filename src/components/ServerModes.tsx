@@ -1,9 +1,21 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Users, Clock, MapPin } from "lucide-react";
+import { Users, Clock, MapPin, Check, Copy } from "lucide-react";
+import { useState } from "react";
 
 const ServerModes = () => {
+  const [copied, setCopied] = useState(false);
+
+  const handleConnect = async () => {
+    try {
+      await navigator.clipboard.writeText("connect 92.118.11.14:28387");
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error('Failed to copy text: ', err);
+    }
+  };
   const servers = [
     {
       id: 1,
@@ -72,8 +84,19 @@ const ServerModes = () => {
                       variant="cs2Outline" 
                       size="sm"
                       className="flex-1 mr-2"
+                      onClick={handleConnect}
                     >
-                      Подключиться
+                      {copied ? (
+                        <>
+                          <Check className="h-4 w-4 mr-2" />
+                          Скопировано
+                        </>
+                      ) : (
+                        <>
+                          <Copy className="h-4 w-4 mr-2" />
+                          Подключиться
+                        </>
+                      )}
                     </Button>
                     <Button 
                       variant="ghost" 
