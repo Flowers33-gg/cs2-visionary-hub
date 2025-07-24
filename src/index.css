@@ -8,35 +8,57 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 220 13% 8%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 220 14% 12%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 220 14% 12%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 0 72% 51%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 220 13% 15%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 13% 15%;
+    --muted-foreground: 220 9% 55%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 45 93% 47%;
+    --accent-foreground: 220 13% 8%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 13% 20%;
+    --input: 220 13% 20%;
+    --ring: 0 72% 51%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+    
+    /* CS2 Gaming Theme Colors */
+    --cs2-red: 0 72% 51%;
+    --cs2-red-dark: 0 72% 41%;
+    --cs2-gold: 45 93% 47%;
+    --cs2-gold-dark: 45 93% 37%;
+    --cs2-dark: 220 13% 8%;
+    --cs2-dark-lighter: 220 14% 12%;
+    --cs2-dark-border: 220 13% 20%;
+    
+    /* Gradients */
+    --gradient-red: linear-gradient(135deg, hsl(var(--cs2-red)), hsl(var(--cs2-red-dark)));
+    --gradient-gold: linear-gradient(135deg, hsl(var(--cs2-gold)), hsl(var(--cs2-gold-dark)));
+    --gradient-dark: linear-gradient(180deg, hsl(var(--cs2-dark)), hsl(var(--cs2-dark-lighter)));
+    
+    /* Shadows & Effects */
+    --shadow-red: 0 10px 30px -10px hsl(var(--cs2-red) / 0.3);
+    --shadow-gold: 0 10px 30px -10px hsl(var(--cs2-gold) / 0.3);
+    --glow-red: 0 0 40px hsl(var(--cs2-red) / 0.4);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
@@ -101,5 +123,27 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
+}
+
+/* Custom animations */
+@keyframes glow {
+  0% { box-shadow: 0 0 20px hsl(var(--cs2-red) / 0.4); }
+  100% { box-shadow: 0 0 40px hsl(var(--cs2-red) / 0.8), 0 0 60px hsl(var(--cs2-red) / 0.4); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* CS2 specific styles */
+.cs2-glow {
+  box-shadow: 0 0 20px hsl(var(--cs2-red) / 0.3);
+  transition: var(--transition-smooth);
+}
+
+.cs2-glow:hover {
+  box-shadow: 0 0 30px hsl(var(--cs2-red) / 0.5);
 }

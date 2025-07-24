@@ -52,6 +52,15 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				cs2: {
+					red: 'hsl(var(--cs2-red))',
+					'red-dark': 'hsl(var(--cs2-red-dark))',
+					gold: 'hsl(var(--cs2-gold))',
+					'gold-dark': 'hsl(var(--cs2-gold-dark))',
+					dark: 'hsl(var(--cs2-dark))',
+					'dark-lighter': 'hsl(var(--cs2-dark-lighter))',
+					'dark-border': 'hsl(var(--cs2-dark-border))',
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -88,7 +97,19 @@ export default {
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'glow': 'glow 2s ease-in-out infinite alternate',
+				'float': 'float 3s ease-in-out infinite',
+			},
+			backgroundImage: {
+				'gradient-red': 'var(--gradient-red)',
+				'gradient-gold': 'var(--gradient-gold)',
+				'gradient-dark': 'var(--gradient-dark)',
+			},
+			boxShadow: {
+				'red': 'var(--shadow-red)',
+				'gold': 'var(--shadow-gold)',
+				'glow-red': 'var(--glow-red)',
 			}
 		}
 	},
