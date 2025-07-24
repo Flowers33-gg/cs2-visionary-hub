@@ -21,7 +21,7 @@ const privileges = [
     color: "from-pink-600 to-pink-400",
     textColor: "text-pink-100",
     features: [
-      "Элитный статус игрока",
+      "VIP+ статус",
       "Расширенный чат",
       "Коллекция скинов",
       "Быстрый доступ к серверу",
@@ -163,30 +163,6 @@ const Shop = () => {
           ))}
         </div>
 
-        {/* Info Section */}
-        <div className="mt-12 bg-cs2-dark-lighter border border-cs2-dark-border rounded-lg p-6">
-          <h2 className="text-xl font-semibold text-foreground mb-4">Информация о покупке</h2>
-          <div className="grid md:grid-cols-2 gap-6 text-sm text-muted-foreground">
-            <div>
-              <h3 className="font-medium text-foreground mb-2">Способы оплаты:</h3>
-              <ul className="space-y-1">
-                <li>• Банковские карты (Visa, MasterCard)</li>
-                <li>• Электронные кошельки</li>
-                <li>• Криптовалюта</li>
-                <li>• Мобильные платежи</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-medium text-foreground mb-2">Важная информация:</h3>
-              <ul className="space-y-1">
-                <li>• Активация мгновенная</li>
-                <li>• Привилегии действуют 30 дней</li>
-                <li>• Возможно продление</li>
-                <li>• Поддержка 24/7</li>
-              </ul>
-            </div>
-          </div>
-        </div>
       </main>
 
       <Footer />
