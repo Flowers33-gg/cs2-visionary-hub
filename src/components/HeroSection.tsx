@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Play, Users, Clock } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/cs2-hero.jpg";
 
 const HeroSection = () => {
@@ -45,14 +46,16 @@ const HeroSection = () => {
           </div>
 
           {/* Action Button */}
-          <Button 
-            variant="cs2" 
-            size="lg" 
-            className="text-lg px-8 py-4 cs2-glow"
-          >
-            <Play className="h-5 w-5" />
-            ПЕРЕЙТИ
-          </Button>
+          <Link to="/shop">
+            <Button 
+              variant="cs2" 
+              size="lg" 
+              className="text-lg px-8 py-4 cs2-glow"
+            >
+              <Play className="h-5 w-5" />
+              МАГАЗИН
+            </Button>
+          </Link>
         </div>
       </div>
 
