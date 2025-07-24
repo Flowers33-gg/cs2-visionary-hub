@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold headshot-gradient">Headshot Master</h3>
+            <h3 className="text-lg font-semibold text-foreground">Headshot Master</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Headshot Master - это проект игровых серверов Counter Strike 2. Главная цель проекта является создание для игроков удобного и приятного пространства для игры.
             </p>
@@ -92,7 +92,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-cs2-dark-border mt-8 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © 2024 <span className="headshot-gradient">Headshot Master</span> CS2. Все права защищены.
+            © 2024 Headshot Master CS2. Все права защищены.
           </p>
           <p className="text-xs text-muted-foreground mt-2 flex items-center justify-center">
             Сделано с <Heart className="h-3 w-3 text-cs2-red mx-1" /> для игрового сообщества

@@ -304,7 +304,7 @@ const Rules = () => {
       <main className="flex-1 container mx-auto px-4 py-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-8">
-            <h1 className="text-4xl font-bold text-foreground mb-2">ПРАВИЛА ПРОЕКТА <span className="headshot-gradient">HEADSHOT MASTER</span></h1>
+            <h1 className="text-4xl font-bold text-foreground mb-2">ПРАВИЛА ПРОЕКТА HEADSHOT MASTER</h1>
             <p className="text-cs2-red text-lg">НАЙДИТЕ ОТВЕТЫ НА СВОИ ВОПРОСЫ</p>
           </div>
 
