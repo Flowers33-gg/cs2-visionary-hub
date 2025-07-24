@@ -7,12 +7,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 // Import privilege images
-import exclusiveImg from "@/assets/privilege-exclusive.jpg";
-import platinumImg from "@/assets/privilege-platinum.jpg";
-import premiumImg from "@/assets/privilege-premium.jpg";
-import eliteImg from "@/assets/privilege-elite.jpg";
-import vipImg from "@/assets/privilege-vip.jpg";
-import boevoyImg from "@/assets/privilege-boevoy.jpg";
+import vipPlusIcon from "@/assets/vip-plus-icon.png";
+import vipIcon from "@/assets/vip-icon.png";
+import battlePassIcon from "@/assets/battle-pass-icon.png";
 
 const privileges = [
   {
@@ -20,7 +17,7 @@ const privileges = [
     name: "VIP+",
     price: 75,
     originalPrice: null,
-    image: eliteImg,
+    image: vipPlusIcon,
     color: "from-pink-600 to-pink-400",
     textColor: "text-pink-100",
     features: [
@@ -36,7 +33,7 @@ const privileges = [
     name: "VIP",
     price: 50,
     originalPrice: null,
-    image: vipImg,
+    image: vipIcon,
     color: "from-cyan-600 to-cyan-400",
     textColor: "text-cyan-100",
     features: [
@@ -52,7 +49,7 @@ const privileges = [
     name: "Battle Pass",
     price: 25,
     originalPrice: null,
-    image: boevoyImg,
+    image: battlePassIcon,
     color: "from-orange-600 to-orange-400",
     textColor: "text-orange-100",
     features: [
