@@ -24,12 +24,12 @@ const Header = () => {
             <Link to="/shop" className="text-foreground hover:text-cs2-red transition-colors duration-300">
               Магазин
             </Link>
-            <a href="#" className="text-foreground hover:text-cs2-red transition-colors duration-300">
+            <a href="#" className="text-foreground hover:text-cs2-gold transition-colors duration-300">
               Лидеры
             </a>
-            <a href="#" className="text-foreground hover:text-cs2-red transition-colors duration-300">
+            <Link to="/banlist" className="text-foreground hover:text-cs2-gold transition-colors duration-300">
               Банлист
-            </a>
+            </Link>
             <a href="#" className="text-foreground hover:text-cs2-red transition-colors duration-300">
               Скинченджер
             </a>
@@ -70,12 +70,12 @@ const Header = () => {
           <Link to="/shop" className="text-sm text-foreground hover:text-cs2-red transition-colors">
             Магазин
           </Link>
-          <a href="#" className="text-sm text-foreground hover:text-cs2-red transition-colors">
-            Лидеры
-          </a>
-          <a href="#" className="text-sm text-foreground hover:text-cs2-red transition-colors">
-            Банлист
-          </a>
+            <a href="#" className="text-sm text-foreground hover:text-cs2-gold transition-colors">
+              Лидеры
+            </a>
+            <Link to="/banlist" className="text-sm text-foreground hover:text-cs2-gold transition-colors">
+              Банлист
+            </Link>
           <a href="#" className="text-sm text-foreground hover:text-cs2-red transition-colors">
             Скинченджер
           </a>
