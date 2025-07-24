@@ -7,6 +7,9 @@ import Index from "./pages/Index";
 import Shop from "./pages/Shop";
 import Banlist from "./pages/Banlist";
 import AdminPanel from "./pages/AdminPanel";
+import Leaders from "./pages/Leaders";
+import Rules from "./pages/Rules";
+import Applications from "./pages/Applications";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -21,6 +24,9 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/banlist" element={<Banlist />} />
+          <Route path="/leaders" element={<Leaders />} />
+          <Route path="/rules" element={<Rules />} />
+          <Route path="/applications" element={<Applications />} />
           <Route path="/admin" element={<AdminPanel />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

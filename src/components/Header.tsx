@@ -1,7 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Users, Gamepad2, Crown, MessageCircle } from "lucide-react";
+import { Users, Gamepad2, Crown, MessageCircle, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const Header = () => {
   return (
@@ -24,18 +30,33 @@ const Header = () => {
             <Link to="/shop" className="text-foreground hover:text-cs2-red transition-colors duration-300">
               Магазин
             </Link>
-            <a href="#" className="text-foreground hover:text-cs2-gold transition-colors duration-300">
+            <Link to="/leaders" className="text-foreground hover:text-cs2-gold transition-colors duration-300">
               Лидеры
-            </a>
+            </Link>
             <Link to="/banlist" className="text-foreground hover:text-cs2-gold transition-colors duration-300">
               Банлист
             </Link>
             <a href="#" className="text-foreground hover:text-cs2-red transition-colors duration-300">
               Скинченджер
             </a>
-            <a href="#" className="text-foreground hover:text-cs2-red transition-colors duration-300">
-              Информация
-            </a>
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center space-x-1 text-foreground hover:text-cs2-red transition-colors duration-300">
+                <span>Информация</span>
+                <ChevronDown className="h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="bg-cs2-dark-lighter border-cs2-dark-border">
+                <DropdownMenuItem asChild>
+                  <Link to="/rules" className="text-foreground hover:text-cs2-gold cursor-pointer">
+                    Правила
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/applications" className="text-foreground hover:text-cs2-gold cursor-pointer">
+                    Заявки
+                  </Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
             <a href="#" className="text-foreground hover:text-cs2-gold transition-colors duration-300">
               Battle Pass
             </a>
@@ -70,15 +91,21 @@ const Header = () => {
           <Link to="/shop" className="text-sm text-foreground hover:text-cs2-red transition-colors">
             Магазин
           </Link>
-            <a href="#" className="text-sm text-foreground hover:text-cs2-gold transition-colors">
-              Лидеры
-            </a>
-            <Link to="/banlist" className="text-sm text-foreground hover:text-cs2-gold transition-colors">
-              Банлист
-            </Link>
+          <Link to="/leaders" className="text-sm text-foreground hover:text-cs2-gold transition-colors">
+            Лидеры
+          </Link>
+          <Link to="/banlist" className="text-sm text-foreground hover:text-cs2-gold transition-colors">
+            Банлист
+          </Link>
           <a href="#" className="text-sm text-foreground hover:text-cs2-red transition-colors">
             Скинченджер
           </a>
+          <Link to="/rules" className="text-sm text-foreground hover:text-cs2-gold transition-colors">
+            Правила
+          </Link>
+          <Link to="/applications" className="text-sm text-foreground hover:text-cs2-gold transition-colors">
+            Заявки
+          </Link>
         </nav>
       </div>
     </header>
