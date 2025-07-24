@@ -10,6 +10,7 @@ import AdminPanel from "./pages/AdminPanel";
 import Leaders from "./pages/Leaders";
 import Rules from "./pages/Rules";
 import Applications from "./pages/Applications";
+import BattlePass from "./pages/BattlePass";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/leaders" element={<Leaders />} />
           <Route path="/rules" element={<Rules />} />
           <Route path="/applications" element={<Applications />} />
+          <Route path="/battlepass" element={<BattlePass />} />
           <Route path="/admin" element={<AdminPanel />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

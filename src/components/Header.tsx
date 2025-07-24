@@ -54,9 +54,9 @@ const Header = () => {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-            <a href="#" className="text-foreground hover:text-cs2-gold transition-colors duration-300">
+            <Link to="/battlepass" className="text-foreground hover:text-cs2-gold transition-colors duration-300">
               Battle Pass
-            </a>
+            </Link>
           </nav>
 
           {/* Actions */}
