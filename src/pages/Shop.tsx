@@ -16,56 +16,8 @@ import boevoyImg from "@/assets/privilege-boevoy.jpg";
 
 const privileges = [
   {
-    id: 1,
-    name: "EXCLUSIVE",
-    price: 200,
-    originalPrice: null,
-    image: exclusiveImg,
-    color: "from-yellow-600 to-yellow-400",
-    textColor: "text-yellow-100",
-    features: [
-      "Эксклюзивный доступ к серверу",
-      "Уникальные привилегии чата",
-      "Специальные скины оружия",
-      "Приоритет в очереди подключения",
-      "Доступ к VIP картам"
-    ]
-  },
-  {
-    id: 2,
-    name: "PLATINUM",
-    price: 150,
-    originalPrice: null,
-    image: platinumImg,
-    color: "from-red-600 to-red-400",
-    textColor: "text-red-100",
-    features: [
-      "Платиновые привилегии",
-      "Расширенные возможности чата",
-      "Премиум скины",
-      "Быстрое подключение",
-      "Доступ к специальным режимам"
-    ]
-  },
-  {
-    id: 3,
-    name: "PREMIUM",
-    price: 100,
-    originalPrice: null,
-    image: premiumImg,
-    color: "from-purple-600 to-purple-400",
-    textColor: "text-purple-100",
-    features: [
-      "Премиум статус",
-      "Улучшенные возможности",
-      "Дополнительные скины",
-      "Приоритетное подключение",
-      "Премиум поддержка"
-    ]
-  },
-  {
     id: 4,
-    name: "ELITE",
+    name: "VIP+",
     price: 75,
     originalPrice: null,
     image: eliteImg,
@@ -97,7 +49,7 @@ const privileges = [
   },
   {
     id: 6,
-    name: "БОЕВОЙ ДОПУСК",
+    name: "Battle Pass",
     price: 25,
     originalPrice: null,
     image: boevoyImg,
