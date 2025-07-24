@@ -36,8 +36,8 @@ const Header = () => {
             <a href="#" className="text-foreground hover:text-cs2-red transition-colors duration-300">
               Информация
             </a>
-            <a href="#" className="text-foreground hover:text-cs2-red transition-colors duration-300">
-              Боевой Допуск
+            <a href="#" className="text-foreground hover:text-cs2-gold transition-colors duration-300">
+              Battle Pass
             </a>
           </nav>
 
