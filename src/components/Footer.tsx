@@ -8,9 +8,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-foreground">CS2GG</h3>
+            <h3 className="text-lg font-semibold text-foreground">Headshot Master</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              CS2GG - это проект игровых серверов Counter Strike 2. Главная цель проекта является создание для игроков удобного и приятного пространства для игры.
+              Headshot Master - это проект игровых серверов Counter Strike 2. Главная цель проекта является создание для игроков удобного и приятного пространства для игры.
             </p>
             <div className="flex items-center space-x-4">
               <Button variant="ghost" size="sm" className="p-2 h-auto">
