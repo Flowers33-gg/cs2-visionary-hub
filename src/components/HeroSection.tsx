@@ -28,7 +28,6 @@ const HeroSection = () => {
               <Badge variant="secondary" className="bg-cs2-red text-primary-foreground px-4 py-2 text-lg">
                 HEADSHOT MASTER
               </Badge>
-              <span className="text-lg text-muted-foreground">МАГАЗИН</span>
             </div>
           </div>
 
