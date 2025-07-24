@@ -18,7 +18,7 @@ const Header = () => {
           <Link to="/" className="flex items-center space-x-3">
             <div className="flex items-center space-x-2">
               <Crown className="h-8 w-8 text-cs2-gold" />
-              <span className="text-xl font-bold text-foreground">Headshot Master</span>
+              <span className="text-xl font-bold headshot-gradient">Headshot Master</span>
             </div>
             <Badge variant="secondary" className="bg-cs2-red text-primary-foreground">
               CS2

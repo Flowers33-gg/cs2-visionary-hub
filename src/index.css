@@ -51,6 +51,7 @@ All colors MUST be HSL.
     --gradient-red: linear-gradient(135deg, hsl(var(--cs2-gold)), hsl(var(--cs2-gold-dark)));
     --gradient-gold: linear-gradient(135deg, hsl(var(--cs2-gold)), hsl(var(--cs2-gold-dark)));
     --gradient-dark: linear-gradient(180deg, hsl(var(--cs2-dark)), hsl(var(--cs2-dark-lighter)));
+    --gradient-headshot: linear-gradient(135deg, #000000 0%, #FFD700 50%, #FFA500 70%, #000000 100%);
     
     /* Shadows & Effects */
     --shadow-red: 0 10px 30px -10px hsl(var(--cs2-gold) / 0.3);
@@ -146,4 +147,13 @@ All colors MUST be HSL.
 
 .cs2-glow:hover {
   box-shadow: 0 0 30px hsl(var(--cs2-gold) / 0.5);
+}
+
+/* Headshot Master gradient text */
+.headshot-gradient {
+  background: var(--gradient-headshot);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
 }

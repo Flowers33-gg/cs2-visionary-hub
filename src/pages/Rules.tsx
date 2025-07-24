@@ -12,7 +12,7 @@ const Rules = () => {
     general: [
       {
         id: "1",
-        title: "Подключаясь к серверам игры, при посещении сайта проекта \"CS2GG\", вы автоматически соглашаетесь с договором оферты в тексте с правилами проекта.",
+        title: "Подключаясь к серверам игры, при посещении сайта проекта \"Headshot Master\", вы автоматически соглашаетесь с договором оферты в тексте с правилами проекта.",
         punishment: "",
       },
       {
@@ -32,7 +32,7 @@ const Rules = () => {
       },
       {
         id: "5",
-        title: "Данные правила являются действующими на всех игровых серверах проекта CS2GG.",
+        title: "Данные правила являются действующими на всех игровых серверах проекта Headshot Master.",
         punishment: "",
       },
       {
@@ -136,7 +136,7 @@ const Rules = () => {
       },
       {
         id: "2.6",
-        title: "Оскорбления в сторону сервера/проекта (А именно CS2GG и всех его серверов)",
+        title: "Оскорбления в сторону сервера/проекта (А именно Headshot Master и всех его серверов)",
         punishment: "",
       },
       {
@@ -304,7 +304,7 @@ const Rules = () => {
       <main className="flex-1 container mx-auto px-4 py-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-8">
-            <h1 className="text-4xl font-bold text-foreground mb-2">ПРАВИЛА ПРОЕКТА CS2GG</h1>
+            <h1 className="text-4xl font-bold text-foreground mb-2">ПРАВИЛА ПРОЕКТА <span className="headshot-gradient">HEADSHOT MASTER</span></h1>
             <p className="text-cs2-red text-lg">НАЙДИТЕ ОТВЕТЫ НА СВОИ ВОПРОСЫ</p>
           </div>
 
