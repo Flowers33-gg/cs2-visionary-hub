@@ -15,7 +15,7 @@ const privileges = [
   {
     id: 4,
     name: "VIP+",
-    price: 75,
+    price: 450,
     originalPrice: null,
     image: vipPlusIcon,
     color: "from-pink-600 to-pink-400",
@@ -31,7 +31,7 @@ const privileges = [
   {
     id: 5,
     name: "VIP",
-    price: 50,
+    price: 250,
     originalPrice: null,
     image: vipIcon,
     color: "from-cyan-600 to-cyan-400",
@@ -47,7 +47,7 @@ const privileges = [
   {
     id: 6,
     name: "Battle Pass",
-    price: 25,
+    price: 175,
     originalPrice: null,
     image: battlePassIcon,
     color: "from-orange-600 to-orange-400",
