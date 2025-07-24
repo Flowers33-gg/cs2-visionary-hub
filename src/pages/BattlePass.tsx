@@ -104,10 +104,12 @@ const BattlePass = () => {
                   {currentXP} / {nextLevelXP} XP
                 </div>
               </div>
-              <Button variant="cs2" size="sm">
-                <Gift className="h-4 w-4 mr-2" />
-                Купить Battle Pass
-              </Button>
+              <Link to="/shop">
+                <Button variant="cs2" size="sm">
+                  <Gift className="h-4 w-4 mr-2" />
+                  Купить Battle Pass
+                </Button>
+              </Link>
             </div>
             <Progress value={progress} className="h-3" />
           </CardContent>
