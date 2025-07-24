@@ -36,9 +36,6 @@ const Header = () => {
             <Link to="/banlist" className="text-foreground hover:text-cs2-gold transition-colors duration-300">
               Банлист
             </Link>
-            <a href="#" className="text-foreground hover:text-cs2-red transition-colors duration-300">
-              Скинченджер
-            </a>
             <DropdownMenu>
               <DropdownMenuTrigger className="flex items-center space-x-1 text-foreground hover:text-cs2-red transition-colors duration-300">
                 <span>Информация</span>
@@ -97,9 +94,6 @@ const Header = () => {
           <Link to="/banlist" className="text-sm text-foreground hover:text-cs2-gold transition-colors">
             Банлист
           </Link>
-          <a href="#" className="text-sm text-foreground hover:text-cs2-red transition-colors">
-            Скинченджер
-          </a>
           <Link to="/rules" className="text-sm text-foreground hover:text-cs2-gold transition-colors">
             Правила
           </Link>
