@@ -97,14 +97,14 @@ const privileges = [
   },
   {
     id: 6,
-    name: "BATTLE PASS",
+    name: "БОЕВОЙ ДОПУСК",
     price: 25,
     originalPrice: null,
     image: boevoyImg,
     color: "from-orange-600 to-orange-400",
     textColor: "text-orange-100",
     features: [
-      "Базовый Battle Pass",
+      "Базовый боевой допуск",
       "Стандартные возможности",
       "Начальные скины",
       "Обычное подключение",
