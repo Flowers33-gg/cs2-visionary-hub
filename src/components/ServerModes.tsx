@@ -7,21 +7,12 @@ const ServerModes = () => {
   const servers = [
     {
       id: 1,
-      name: "MIRAGE",
+      name: "DUST2",
       mode: "Все",
-      players: "4/32",
-      map: "de_mirage",
-      status: "online",
-      featured: true
-    },
-    {
-      id: 2,
-      name: "RANDOM MODELS DUST2",
-      mode: "FUN",
-      players: "8/32",
+      players: "12/32",
       map: "de_dust2",
       status: "online",
-      featured: false
+      featured: true
     }
   ];
 
@@ -32,19 +23,13 @@ const ServerModes = () => {
         <div className="flex justify-center mb-8">
           <div className="flex items-center space-x-1 bg-cs2-dark-lighter rounded-lg p-1 border border-cs2-dark-border">
             <Button variant="cs2" size="sm" className="rounded-md">
-              Все
-            </Button>
-            <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
-              MIRAGE
-            </Button>
-            <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
-              RANDOM MODELS
+              DUST2
             </Button>
           </div>
         </div>
 
         {/* Server Cards */}
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 gap-6 max-w-2xl mx-auto">
           {servers.map((server) => (
             <Card 
               key={server.id} 
