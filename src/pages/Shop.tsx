@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, ShoppingCart, Crown, Star } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useToast } from "@/hooks/use-toast";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -63,6 +64,7 @@ const privileges = [
 ];
 
 const Shop = () => {
+  const { toast } = useToast();
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -151,8 +153,18 @@ const Shop = () => {
                   variant="cs2" 
                   className="w-full cs2-glow"
                   onClick={() => {
-                    // Add to cart logic here
-                    console.log(`Adding ${privilege.name} to cart`);
+                    toast({
+                      title: "Покупка обрабатывается",
+                      description: `${privilege.name} добавлен в корзину! Перенаправляем на оплату...`,
+                    });
+                    
+                    // Simulate purchase
+                    setTimeout(() => {
+                      toast({
+                        title: "Покупка успешна!",
+                        description: `Привилегия ${privilege.name} активирована на вашем аккаунте.`,
+                      });
+                    }, 2000);
                   }}
                 >
                   <ShoppingCart className="h-4 w-4" />

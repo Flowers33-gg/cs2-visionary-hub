@@ -52,6 +52,16 @@ const Header = () => {
                     Заявки
                   </Link>
                 </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/server-stats" className="text-foreground hover:text-cs2-gold cursor-pointer">
+                    Статистика серверов
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/game-settings" className="text-foreground hover:text-cs2-gold cursor-pointer">
+                    Настройки игры
+                  </Link>
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
             <Link to="/battlepass" className="text-foreground hover:text-cs2-gold transition-colors duration-300">
@@ -77,6 +87,13 @@ const Header = () => {
               Discord
             </Button>
             
+            <Link to="/profile">
+              <Button variant="outline">
+                <User className="h-4 w-4" />
+                Профиль
+              </Button>
+            </Link>
+            
             <Button variant="cs2Gold">
               Пополнить
             </Button>
@@ -99,6 +116,12 @@ const Header = () => {
           </Link>
           <Link to="/applications" className="text-sm text-foreground hover:text-cs2-gold transition-colors">
             Заявки
+          </Link>
+          <Link to="/server-stats" className="text-sm text-foreground hover:text-cs2-gold transition-colors">
+            Сервера
+          </Link>
+          <Link to="/game-settings" className="text-sm text-foreground hover:text-cs2-gold transition-colors">
+            Настройки
           </Link>
         </nav>
       </div>

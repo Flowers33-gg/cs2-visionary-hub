@@ -11,6 +11,9 @@ import Leaders from "./pages/Leaders";
 import Rules from "./pages/Rules";
 import Applications from "./pages/Applications";
 import BattlePass from "./pages/BattlePass";
+import ServerStats from "./pages/ServerStats";
+import GameSettings from "./pages/GameSettings";
+import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +32,9 @@ const App = () => (
           <Route path="/rules" element={<Rules />} />
           <Route path="/applications" element={<Applications />} />
           <Route path="/battlepass" element={<BattlePass />} />
+          <Route path="/server-stats" element={<ServerStats />} />
+          <Route path="/game-settings" element={<GameSettings />} />
+          <Route path="/profile" element={<Profile />} />
           <Route path="/admin" element={<AdminPanel />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
