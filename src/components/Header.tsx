@@ -36,24 +36,12 @@ const Header = () => {
             <Link to="/banlist" className="text-foreground hover:text-cs2-gold transition-colors duration-300">
               Банлист
             </Link>
-            <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center space-x-1 text-foreground hover:text-cs2-red transition-colors duration-300">
-                <span>Информация</span>
-                <ChevronDown className="h-4 w-4" />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-cs2-dark-lighter border-cs2-dark-border">
-                <DropdownMenuItem asChild>
-                  <Link to="/rules" className="text-foreground hover:text-cs2-gold cursor-pointer">
-                    Правила
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link to="/applications" className="text-foreground hover:text-cs2-gold cursor-pointer">
-                    Заявки
-                  </Link>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
+            <Link to="/rules" className="text-foreground hover:text-cs2-gold transition-colors duration-300">
+              Правила
+            </Link>
+            <Link to="/applications" className="text-foreground hover:text-cs2-gold transition-colors duration-300">
+              Заявки
+            </Link>
             <Link to="/battlepass" className="text-foreground hover:text-cs2-gold transition-colors duration-300">
               Battle Pass
             </Link>
