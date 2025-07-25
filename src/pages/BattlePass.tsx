@@ -54,7 +54,7 @@ const getRewardColor = (type: string) => {
     case "sticker": return "text-blue-400";
     case "graffiti": return "text-green-400";
     case "title": return "text-orange-400";
-    default: return "text-gray-400";
+    default: return "text-cs2-silver";
   }
 };
 
@@ -134,7 +134,7 @@ const BattlePass = () => {
                     >
                       <div className="flex items-center space-x-4">
                         <div className={`w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg ${
-                          level.unlocked ? 'bg-cs2-gold text-black' : 'bg-cs2-dark text-muted-foreground'
+                          level.unlocked ? 'bg-cs2-gold text-cs2-dark' : 'bg-cs2-dark text-muted-foreground'
                         }`}>
                           {level.level}
                         </div>
@@ -176,9 +176,9 @@ const BattlePass = () => {
                     <div key={player.rank} className="flex items-center justify-between">
                       <div className="flex items-center space-x-3">
                         <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${
-                          player.rank === 1 ? 'bg-cs2-gold text-black' : 
-                          player.rank === 2 ? 'bg-gray-400 text-black' : 
-                          player.rank === 3 ? 'bg-orange-600 text-white' :
+                          player.rank === 1 ? 'bg-cs2-gold text-cs2-dark' : 
+                          player.rank === 2 ? 'bg-cs2-silver text-cs2-dark' : 
+                          player.rank === 3 ? 'bg-cs2-bronze text-foreground' :
                           'bg-cs2-dark text-muted-foreground'
                         }`}>
                           {player.rank}

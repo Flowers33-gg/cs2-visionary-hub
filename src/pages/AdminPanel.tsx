@@ -116,9 +116,9 @@ const AdminPanel = () => {
       case "permanent":
         return "bg-destructive text-destructive-foreground";
       case "temporary":
-        return "bg-orange-500 text-white";
+        return "bg-cs2-bronze text-foreground";
       case "chat":
-        return "bg-yellow-500 text-black";
+        return "bg-cs2-gold text-cs2-dark";
       default:
         return "bg-muted";
     }

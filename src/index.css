@@ -43,6 +43,10 @@ All colors MUST be HSL.
     --cs2-red-dark: 45 93% 37%;
     --cs2-gold: 50 100% 60%;
     --cs2-gold-dark: 45 93% 47%;
+    --cs2-blue: 220 100% 70%;
+    --cs2-green: 120 60% 50%;
+    --cs2-silver: 0 0% 60%;
+    --cs2-bronze: 25 80% 50%;
     --cs2-dark: 15 15% 5%;
     --cs2-dark-lighter: 20 20% 8%;
     --cs2-dark-border: 30 30% 15%;

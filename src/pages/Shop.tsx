@@ -112,7 +112,7 @@ const Shop = () => {
                   {/* Content Overlay */}
                   <div className="absolute inset-0 p-4 flex flex-col justify-between">
                     <div className="flex justify-between items-start">
-                      <Badge variant="secondary" className={`${privilege.textColor} bg-black/30 backdrop-blur-sm`}>
+                      <Badge variant="secondary" className={`${privilege.textColor} bg-cs2-dark/60 backdrop-blur-sm`}>
                         {privilege.name}
                       </Badge>
                       <Crown className={`h-6 w-6 ${privilege.textColor}`} />

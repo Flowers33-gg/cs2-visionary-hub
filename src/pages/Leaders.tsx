@@ -46,9 +46,9 @@ const Leaders = () => {
       case "gold":
         return <Crown className="h-8 w-8 text-cs2-gold" />;
       case "silver":
-        return <Medal className="h-8 w-8 text-gray-400" />;
+        return <Medal className="h-8 w-8 text-cs2-silver" />;
       case "bronze":
-        return <Trophy className="h-8 w-8 text-orange-600" />;
+        return <Trophy className="h-8 w-8 text-cs2-bronze" />;
       default:
         return null;
     }
@@ -75,7 +75,7 @@ const Leaders = () => {
                   <div className="mb-4">
                     {getMedalIcon(player.medal)}
                   </div>
-                  <div className={`text-6xl font-bold mb-2 ${player.rank === 1 ? 'text-cs2-gold' : player.rank === 2 ? 'text-gray-400' : 'text-orange-600'}`}>
+                  <div className={`text-6xl font-bold mb-2 ${player.rank === 1 ? 'text-cs2-gold' : player.rank === 2 ? 'text-cs2-silver' : 'text-cs2-bronze'}`}>
                     {player.rank}
                   </div>
                   <h3 className="text-xl font-bold text-foreground mb-2">{player.name}</h3>
