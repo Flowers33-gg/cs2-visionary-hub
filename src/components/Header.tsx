@@ -52,16 +52,6 @@ const Header = () => {
                     Заявки
                   </Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link to="/server-stats" className="text-foreground hover:text-cs2-gold cursor-pointer">
-                    Статистика серверов
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link to="/game-settings" className="text-foreground hover:text-cs2-gold cursor-pointer">
-                    Настройки игры
-                  </Link>
-                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
             <Link to="/battlepass" className="text-foreground hover:text-cs2-gold transition-colors duration-300">
