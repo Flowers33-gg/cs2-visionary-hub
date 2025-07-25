@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Users, Gamepad2, Crown, MessageCircle, ChevronDown } from "lucide-react";
+import { Users, Gamepad2, Crown, MessageCircle, ChevronDown, User } from "lucide-react";
 import { Link } from "react-router-dom";
 import {
   DropdownMenu,
