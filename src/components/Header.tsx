@@ -51,10 +51,6 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             <div className="hidden lg:flex items-center space-x-4">
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-                <Users className="h-4 w-4" />
-                <span>На сайте: 4</span>
-              </div>
-              <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <Gamepad2 className="h-4 w-4" />
                 <span>Играют: 42</span>
               </div>
