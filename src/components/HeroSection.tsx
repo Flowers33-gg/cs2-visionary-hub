@@ -1,10 +1,30 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Play, Users, Clock } from "lucide-react";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { Play, Users, Clock, MessageCircle, Send } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useToast } from "@/hooks/use-toast";
 import heroImage from "@/assets/cs2-hero.jpg";
 
 const HeroSection = () => {
+  const { toast } = useToast();
+
+  const copyToClipboard = async (text: string, platform: string) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      toast({
+        title: "Скопировано!",
+        description: `${platform} ID скопирован в буфер обмена`,
+      });
+    } catch (err) {
+      toast({
+        title: "Ошибка",
+        description: "Не удалось скопировать в буфер обмена",
+        variant: "destructive",
+      });
+    }
+  };
+
   return (
     <section className="relative min-h-[600px] bg-gradient-dark overflow-hidden">
       {/* Background Image */}
@@ -56,6 +76,35 @@ const HeroSection = () => {
             </Button>
           </Link>
         </div>
+      </div>
+
+      {/* Founder Panel */}
+      <div className="absolute top-6 right-6 z-20">
+        <Card className="bg-card/90 backdrop-blur-sm border-cs2-red/30">
+          <CardHeader className="pb-2">
+            <CardTitle className="text-lg text-center text-cs2-red">Основатель</CardTitle>
+          </CardHeader>
+          <CardContent className="pt-0 space-y-3">
+            <Button
+              variant="outline"
+              size="sm"
+              className="w-full flex items-center gap-2 border-cs2-red/30 hover:bg-cs2-red/10"
+              onClick={() => copyToClipboard("ramzik0314", "Discord")}
+            >
+              <MessageCircle className="h-4 w-4" />
+              Discord
+            </Button>
+            <Button
+              variant="outline"
+              size="sm"
+              className="w-full flex items-center gap-2 border-cs2-red/30 hover:bg-cs2-red/10"
+              onClick={() => copyToClipboard("@Pohyi_mne_33", "Telegram")}
+            >
+              <Send className="h-4 w-4" />
+              Telegram
+            </Button>
+          </CardContent>
+        </Card>
       </div>
 
     </section>
