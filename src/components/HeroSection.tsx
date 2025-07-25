@@ -4,7 +4,7 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Play, Users, Clock, MessageCircle, Send } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
-import heroImage from "@/assets/cs2-aggressive-bg.jpg";
+import heroImage from "@/assets/cs2-black-gold-bg.jpg";
 
 const HeroSection = () => {
   const { toast } = useToast();

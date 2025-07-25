@@ -8,74 +8,74 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 10 20% 3%;
-    --foreground: 15 85% 90%;
+    --background: 0 0% 2%;
+    --foreground: 50 100% 90%;
 
-    --card: 12 25% 6%;
-    --card-foreground: 15 85% 90%;
+    --card: 0 0% 5%;
+    --card-foreground: 50 100% 90%;
 
-    --popover: 12 25% 6%;
-    --popover-foreground: 15 85% 90%;
+    --popover: 0 0% 5%;
+    --popover-foreground: 50 100% 90%;
 
-    --primary: 15 100% 65%;
-    --primary-foreground: 10 20% 3%;
+    --primary: 50 100% 60%;
+    --primary-foreground: 0 0% 2%;
 
-    --secondary: 18 30% 8%;
-    --secondary-foreground: 15 85% 90%;
+    --secondary: 0 0% 8%;
+    --secondary-foreground: 50 100% 90%;
 
-    --muted: 18 30% 8%;
-    --muted-foreground: 15 60% 70%;
+    --muted: 0 0% 8%;
+    --muted-foreground: 50 80% 70%;
 
-    --accent: 25 100% 70%;
-    --accent-foreground: 10 20% 3%;
+    --accent: 45 100% 70%;
+    --accent-foreground: 0 0% 2%;
 
     --destructive: 0 85% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 20 40% 12%;
-    --input: 20 40% 12%;
-    --ring: 15 100% 65%;
+    --border: 0 0% 12%;
+    --input: 0 0% 12%;
+    --ring: 50 100% 60%;
 
     --radius: 0.75rem;
     
-    /* CS2 Aggressive Theme Colors - Orange & Black */
-    --cs2-red: 15 100% 65%;
-    --cs2-red-dark: 15 100% 50%;
-    --cs2-gold: 35 100% 65%;
-    --cs2-gold-dark: 25 100% 55%;
+    /* CS2 Black & Gold Aggressive Theme */
+    --cs2-red: 50 100% 60%;
+    --cs2-red-dark: 45 100% 45%;
+    --cs2-gold: 50 100% 60%;
+    --cs2-gold-dark: 45 100% 45%;
     --cs2-blue: 220 100% 70%;
     --cs2-green: 120 60% 50%;
     --cs2-silver: 0 0% 60%;
     --cs2-bronze: 25 80% 50%;
-    --cs2-dark: 10 20% 3%;
-    --cs2-dark-lighter: 12 25% 6%;
-    --cs2-dark-border: 20 40% 12%;
+    --cs2-dark: 0 0% 2%;
+    --cs2-dark-lighter: 0 0% 5%;
+    --cs2-dark-border: 0 0% 12%;
     
-    /* Aggressive Gradients */
-    --gradient-red: linear-gradient(135deg, hsl(var(--cs2-red)), hsl(var(--cs2-red-dark)), hsl(10 15% 5%));
-    --gradient-gold: linear-gradient(135deg, hsl(var(--cs2-gold)), hsl(var(--cs2-gold-dark)), hsl(10 15% 5%));
-    --gradient-dark: linear-gradient(180deg, hsl(var(--cs2-dark)), hsl(var(--cs2-dark-lighter)), hsl(20 30% 8%));
-    --gradient-aggressive: linear-gradient(135deg, #1a0a00 0%, #ff4500 20%, #ff6600 40%, #cc3300 60%, #661100 80%, #000000 100%);
-    --gradient-headshot: linear-gradient(135deg, #000000 0%, #ff4500 30%, #ff6600 50%, #cc3300 70%, #000000 100%);
+    /* Black & Gold Aggressive Gradients */
+    --gradient-red: linear-gradient(135deg, hsl(var(--cs2-gold)), hsl(var(--cs2-gold-dark)), hsl(0 0% 8%));
+    --gradient-gold: linear-gradient(135deg, hsl(var(--cs2-gold)), hsl(var(--cs2-gold-dark)), hsl(0 0% 8%));
+    --gradient-dark: linear-gradient(180deg, hsl(var(--cs2-dark)), hsl(var(--cs2-dark-lighter)), hsl(0 0% 8%));
+    --gradient-aggressive: linear-gradient(135deg, #000000 0%, #FFD700 15%, #FFA500 30%, #FFD700 45%, #000000 60%, #333333 80%, #000000 100%);
+    --gradient-headshot: linear-gradient(135deg, #000000 0%, #FFD700 25%, #FFA500 50%, #FFD700 75%, #000000 100%);
     
-    /* Enhanced Shadows & Effects */
-    --shadow-red: 0 15px 40px -10px hsl(var(--cs2-red) / 0.6);
-    --shadow-gold: 0 15px 40px -10px hsl(var(--cs2-gold) / 0.6);
-    --glow-red: 0 0 60px hsl(var(--cs2-red) / 0.8);
-    --shadow-aggressive: 0 20px 50px -15px hsl(15 100% 50% / 0.7);
+    /* Enhanced Black & Gold Shadows & Effects */
+    --shadow-red: 0 20px 50px -15px hsl(var(--cs2-gold) / 0.8);
+    --shadow-gold: 0 20px 50px -15px hsl(var(--cs2-gold) / 0.8);
+    --glow-red: 0 0 80px hsl(var(--cs2-gold) / 1);
+    --shadow-aggressive: 0 25px 60px -20px hsl(50 100% 50% / 0.9);
     
     /* Enhanced Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     
-    --sidebar-background: 12 25% 6%;
-    --sidebar-foreground: 15 85% 90%;
-    --sidebar-primary: 15 100% 65%;
-    --sidebar-primary-foreground: 10 20% 3%;
-    --sidebar-accent: 18 30% 8%;
-    --sidebar-accent-foreground: 15 85% 90%;
-    --sidebar-border: 20 40% 12%;
+    --sidebar-background: 0 0% 5%;
+    --sidebar-foreground: 50 100% 90%;
+    --sidebar-primary: 50 100% 60%;
+    --sidebar-primary-foreground: 0 0% 2%;
+    --sidebar-accent: 0 0% 8%;
+    --sidebar-accent-foreground: 50 100% 90%;
+    --sidebar-border: 0 0% 12%;
 
-    --sidebar-ring: 15 100% 65%;
+    --sidebar-ring: 50 100% 60%;
   }
 
   .dark {
