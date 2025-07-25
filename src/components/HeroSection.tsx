@@ -4,7 +4,7 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Play, Users, Clock, MessageCircle, Send } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
-import heroImage from "@/assets/cs2-hero.jpg";
+import heroImage from "@/assets/cs2-aggressive-bg.jpg";
 
 const HeroSection = () => {
   const { toast } = useToast();
@@ -26,15 +26,19 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-[600px] bg-gradient-dark overflow-hidden">
+    <section className="relative min-h-[600px] bg-gradient-aggressive overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 bg-gradient-to-br from-cs2-dark via-transparent to-cs2-dark opacity-80" />
+      
       {/* Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-70"
         style={{ backgroundImage: `url(${heroImage})` }}
       />
       
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-cs2-dark via-cs2-dark/80 to-transparent" />
+      {/* Multiple Gradient Overlays for Aggressive Look */}
+      <div className="absolute inset-0 bg-gradient-to-r from-cs2-dark via-transparent to-cs2-dark/90" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-cs2-dark/30 to-cs2-dark" />
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-20">

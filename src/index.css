@@ -8,78 +8,74 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 15 15% 5%;
-    --foreground: 45 95% 85%;
+    --background: 10 20% 3%;
+    --foreground: 15 85% 90%;
 
-    --card: 20 20% 8%;
-    --card-foreground: 45 95% 85%;
+    --card: 12 25% 6%;
+    --card-foreground: 15 85% 90%;
 
-    --popover: 20 20% 8%;
-    --popover-foreground: 45 95% 85%;
+    --popover: 12 25% 6%;
+    --popover-foreground: 15 85% 90%;
 
-    --primary: 45 93% 47%;
-    --primary-foreground: 15 15% 5%;
+    --primary: 15 100% 65%;
+    --primary-foreground: 10 20% 3%;
 
-    --secondary: 25 25% 12%;
-    --secondary-foreground: 45 95% 85%;
+    --secondary: 18 30% 8%;
+    --secondary-foreground: 15 85% 90%;
 
-    --muted: 25 25% 12%;
-    --muted-foreground: 45 50% 60%;
+    --muted: 18 30% 8%;
+    --muted-foreground: 15 60% 70%;
 
-    --accent: 50 100% 60%;
-    --accent-foreground: 15 15% 5%;
+    --accent: 25 100% 70%;
+    --accent-foreground: 10 20% 3%;
 
-    --destructive: 0 72% 51%;
+    --destructive: 0 85% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 30 30% 15%;
-    --input: 30 30% 15%;
-    --ring: 45 93% 47%;
+    --border: 20 40% 12%;
+    --input: 20 40% 12%;
+    --ring: 15 100% 65%;
 
     --radius: 0.75rem;
     
-    /* CS2 Gaming Theme Colors - Gold & Black */
-    --cs2-red: 45 93% 47%;
-    --cs2-red-dark: 45 93% 37%;
-    --cs2-gold: 50 100% 60%;
-    --cs2-gold-dark: 45 93% 47%;
+    /* CS2 Aggressive Theme Colors - Orange & Black */
+    --cs2-red: 15 100% 65%;
+    --cs2-red-dark: 15 100% 50%;
+    --cs2-gold: 35 100% 65%;
+    --cs2-gold-dark: 25 100% 55%;
     --cs2-blue: 220 100% 70%;
     --cs2-green: 120 60% 50%;
     --cs2-silver: 0 0% 60%;
     --cs2-bronze: 25 80% 50%;
-    --cs2-dark: 15 15% 5%;
-    --cs2-dark-lighter: 20 20% 8%;
-    --cs2-dark-border: 30 30% 15%;
+    --cs2-dark: 10 20% 3%;
+    --cs2-dark-lighter: 12 25% 6%;
+    --cs2-dark-border: 20 40% 12%;
     
-    /* Gradients */
-    --gradient-red: linear-gradient(135deg, hsl(var(--cs2-gold)), hsl(var(--cs2-gold-dark)));
-    --gradient-gold: linear-gradient(135deg, hsl(var(--cs2-gold)), hsl(var(--cs2-gold-dark)));
-    --gradient-dark: linear-gradient(180deg, hsl(var(--cs2-dark)), hsl(var(--cs2-dark-lighter)));
-    --gradient-headshot: linear-gradient(135deg, #000000 0%, #FFD700 50%, #FFA500 70%, #000000 100%);
+    /* Aggressive Gradients */
+    --gradient-red: linear-gradient(135deg, hsl(var(--cs2-red)), hsl(var(--cs2-red-dark)), hsl(10 15% 5%));
+    --gradient-gold: linear-gradient(135deg, hsl(var(--cs2-gold)), hsl(var(--cs2-gold-dark)), hsl(10 15% 5%));
+    --gradient-dark: linear-gradient(180deg, hsl(var(--cs2-dark)), hsl(var(--cs2-dark-lighter)), hsl(20 30% 8%));
+    --gradient-aggressive: linear-gradient(135deg, #1a0a00 0%, #ff4500 20%, #ff6600 40%, #cc3300 60%, #661100 80%, #000000 100%);
+    --gradient-headshot: linear-gradient(135deg, #000000 0%, #ff4500 30%, #ff6600 50%, #cc3300 70%, #000000 100%);
     
-    /* Shadows & Effects */
-    --shadow-red: 0 10px 30px -10px hsl(var(--cs2-gold) / 0.3);
-    --shadow-gold: 0 10px 30px -10px hsl(var(--cs2-gold) / 0.3);
-    --glow-red: 0 0 40px hsl(var(--cs2-gold) / 0.4);
+    /* Enhanced Shadows & Effects */
+    --shadow-red: 0 15px 40px -10px hsl(var(--cs2-red) / 0.6);
+    --shadow-gold: 0 15px 40px -10px hsl(var(--cs2-gold) / 0.6);
+    --glow-red: 0 0 60px hsl(var(--cs2-red) / 0.8);
+    --shadow-aggressive: 0 20px 50px -15px hsl(15 100% 50% / 0.7);
     
-    /* Transitions */
+    /* Enhanced Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    --sidebar-background: 12 25% 6%;
+    --sidebar-foreground: 15 85% 90%;
+    --sidebar-primary: 15 100% 65%;
+    --sidebar-primary-foreground: 10 20% 3%;
+    --sidebar-accent: 18 30% 8%;
+    --sidebar-accent-foreground: 15 85% 90%;
+    --sidebar-border: 20 40% 12%;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 15 100% 65%;
   }
 
   .dark {
