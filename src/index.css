@@ -143,6 +143,12 @@ All colors MUST be HSL.
   50% { transform: translateY(-10px); }
 }
 
+@keyframes founder-glow {
+  0% { color: hsl(var(--cs2-gold)); }
+  50% { color: hsl(0, 0%, 0%); }
+  100% { color: hsl(var(--cs2-gold)); }
+}
+
 /* CS2 specific styles */
 .cs2-glow {
   box-shadow: 0 0 20px hsl(var(--cs2-gold) / 0.3);
@@ -160,4 +166,9 @@ All colors MUST be HSL.
   -webkit-text-fill-color: transparent;
   background-clip: text;
   font-weight: bold;
+}
+
+/* Founder title animation */
+.founder-glow {
+  animation: founder-glow 2s ease-in-out infinite;
 }

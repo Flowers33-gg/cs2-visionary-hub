@@ -82,7 +82,7 @@ const HeroSection = () => {
       <div className="absolute top-6 right-6 z-20">
         <Card className="bg-card/90 backdrop-blur-sm border-cs2-red/30">
           <CardHeader className="pb-2">
-            <CardTitle className="text-lg text-center text-cs2-red">Основатель</CardTitle>
+            <CardTitle className="text-lg text-center founder-glow">Основатель</CardTitle>
           </CardHeader>
           <CardContent className="pt-0 space-y-3">
             <Button
