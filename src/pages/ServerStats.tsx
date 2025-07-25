@@ -248,66 +248,6 @@ const ServerStats = () => {
               </Card>
             </div>
 
-            {/* Server List */}
-            <div className="space-y-4">
-              <h2 className="text-xl font-semibold text-foreground">Список серверов</h2>
-              {serverData.map((server) => (
-                <Card key={server.id} className="bg-cs2-dark-lighter border-cs2-dark-border">
-                  <CardContent className="p-6">
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center space-x-4">
-                        <div className="flex items-center space-x-2">
-                          <div className={`w-3 h-3 rounded-full ${server.status === 'online' ? 'bg-cs2-green' : server.status === 'restart' ? 'bg-cs2-bronze' : 'bg-destructive'}`} />
-                          <Badge className={getStatusColor(server.status)}>
-                            {getStatusText(server.status)}
-                          </Badge>
-                        </div>
-                        
-                        <div>
-                          <h3 className="font-semibold text-foreground">{server.name}</h3>
-                          <div className="flex items-center space-x-4 text-sm text-muted-foreground">
-                            <span className="flex items-center">
-                              <Map className="h-3 w-3 mr-1" />
-                              {server.map}
-                            </span>
-                            <span className="flex items-center">
-                              <Gamepad2 className="h-3 w-3 mr-1" />
-                              {server.mode}
-                            </span>
-                            <span className="flex items-center">
-                              <Clock className="h-3 w-3 mr-1" />
-                              {server.ping}ms
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="flex items-center space-x-4">
-                        <div className="text-right">
-                          <div className="text-sm font-medium text-foreground">
-                            {server.players}/{server.maxPlayers}
-                          </div>
-                          <Progress 
-                            value={(server.players / server.maxPlayers) * 100} 
-                            className="w-20 h-2"
-                          />
-                        </div>
-                        
-                        <Button
-                          variant={server.status === "online" ? "cs2" : "outline"}
-                          size="sm"
-                          disabled={server.status !== "online"}
-                          onClick={() => connectToServer(server.ip)}
-                        >
-                          <Users className="h-4 w-4 mr-2" />
-                          {server.status === "online" ? "Подключиться" : "Недоступен"}
-                        </Button>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
           </TabsContent>
 
           <TabsContent value="stats" className="space-y-6">

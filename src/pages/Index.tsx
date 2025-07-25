@@ -1,6 +1,5 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
-import ServerModes from "@/components/ServerModes";
 import PlayerStats from "@/components/PlayerStats";
 import Footer from "@/components/Footer";
 
@@ -9,7 +8,6 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <HeroSection />
-      <ServerModes />
       <PlayerStats />
       <Footer />
     </div>
