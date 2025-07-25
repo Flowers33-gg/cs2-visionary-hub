@@ -60,7 +60,7 @@ const Applications = () => {
               <CardContent>
                 <div className="space-y-4">
                   <div className="text-center">
-                    <div className="w-16 h-16 bg-gradient-to-br from-cs2-gold to-cs2-red rounded-full mx-auto mb-3"></div>
+                    <div className="text-6xl mx-auto mb-3">🔰</div>
                     <h3 className="text-xl font-bold text-foreground mb-2">РЕКОМЕНДАЦИИ</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
                       "Молодые" игроки "Славяне-CS2" - это ответственный член команды, который отвечает 
